@@ -3,4 +3,6 @@
         materialized='table'
     )
 }}
-select ORDERID from raw.stripe.payment
+
+select *
+from {{ ref("my_second_dbt_model") }}
