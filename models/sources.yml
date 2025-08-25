@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: raw          # Snowflake database
+    schema: jaffle_shop    # Snowflake schema
+    tables:
+      - name: customers
+      - name: orders
+
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+      - name: payment
