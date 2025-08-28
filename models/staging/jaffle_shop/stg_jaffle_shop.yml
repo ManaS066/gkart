@@ -1,0 +1,14 @@
+models:
+  - name: stg_jaffle_shop_customer
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_jaffle_shop_orders
+    columns:
+      - name: status
+        tests:   # use a list of tests
+          - accepted_values:
+              values: ['shipped', 'completed', 'return_pending']
