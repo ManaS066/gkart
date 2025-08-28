@@ -4,12 +4,17 @@ sources:
   - name: jaffle_shop
     database: raw          # Snowflake database
     schema: jaffle_shop    # Snowflake schema
+    description: "Source data from the Jaffle Shop database, containing customers and orders information."
     tables:
       - name: customers
+        description: "Contains details about each customer such as name, email, and customer_id."
       - name: orders
+        description: "Contains order information including order_id, customer_id, status, and total amount."
 
   - name: stripe
     database: raw
     schema: stripe
+    description: "Source data from the Stripe database, storing payment transaction records."
     tables:
       - name: payment
+        description: "Contains payment details such as payment_id, order_id, amount, and payment status."
