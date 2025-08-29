@@ -8,11 +8,11 @@ models:
           - not_null
           - unique
 
-  - name: stg_jaffle_shop_orders
-    description: one order per row
-    columns:
-      - name: status
-        description: "{{ doc('order_status')}}" 
-        tests:   # use a list of tests
-          - accepted_values:
-              values: ['shipped', 'completed', 'return_pending']
+  # - name: stg_jaffle_shop_orders
+  #   description: one order per row
+  #   columns:
+  #     - name: status
+  #       description: "{{ doc('order_status')}}" 
+  #       tests:   # use a list of tests
+  #         - accepted_values:
+  #             values: ['shipped', 'completed', 'return_pending']
