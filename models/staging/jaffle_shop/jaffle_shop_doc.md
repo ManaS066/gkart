@@ -1,10 +1,5 @@
 {% docs order_status %}
-
-finance-tracker/
-│
-├── backend/        # Spring Boot backend
-├── frontend/       # React frontend
-├── docs/           # Project documentation
-└── README.md
-
-{% enddoc %}
+The `order_status` column indicates the current status of an order. 
+Allowed values include `shipped`, `completed`, and `return_pending`. 
+This column is used to track order fulfillment in the Jaffle Shop system.
+{% enddocs %}
