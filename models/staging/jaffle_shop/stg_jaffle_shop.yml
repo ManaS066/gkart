@@ -13,6 +13,6 @@ models:
     columns:
       - name: status
         description: "{{ doc('order_status')}}" 
-        tests:   # use a list of tests
+        tests:
           - accepted_values:
-              values: ['shipped', 'completed', 'return_pending']
+              values: ['shipped', 'completed', 'return_pending', 'placed','returned']
